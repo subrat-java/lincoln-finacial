@@ -1,0 +1,13 @@
+package com.example.Api_Gateway.exception;
+
+public class NotFoundException extends RuntimeException {
+
+
+    public NotFoundException(String message) {
+        super(message);
+    }
+
+    public NotFoundException(String entity, Object id) {
+        super(entity + " not found: " + id);
+    }
+}
